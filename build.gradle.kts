@@ -14,9 +14,14 @@ repositories {
     jcenter()
     mavenCentral()
     maven { url = uri("https://maven.pkg.jetbrains.space/public/p/compose/dev") }
+    maven { url = uri("https://oss.sonatype.org/content/repositories/snapshots") }
 }
 
 dependencies {
+    implementation("org.pushing-pixels:aurora-skin:0.0.40-SNAPSHOT")
+    implementation("org.pushing-pixels:aurora-icon-icon:0.0.40-SNAPSHOT")
+    implementation("org.pushing-pixels:aurora-component:0.0.40-SNAPSHOT")
+    implementation("org.pushing-pixels:aurora-window:0.0.40-SNAPSHOT")
     implementation(compose.desktop.currentOs)
 }
 
